@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * @category    Sigma
+ * @package     Sigma_DuskWebApisLog
+ * @copyright   Copyright (c) Sigma Infosolutions (https://www.sigmainfo.net/)
+ * @license     https://www.sigmainfo.net/LICENSE.txt
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="dusk_api_log_grid_listing_data_source" xsi:type="string">Sigma\DuskWebApisLog\Model\ResourceModel\DuskApiLogs\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Sigma\DuskWebApisLog\Model\ResourceModel\DuskApiLogs\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">sigma_dusk_api_logs</argument>
+            <argument name="eventPrefix" xsi:type="string">sigma_dusk_api_logs_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">sigma_dusk_api_logs_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Sigma\DuskWebApisLog\Model\ResourceModel\DuskApiLogs</argument>
+        </arguments>
+    </type>
+    <virtualType name="DuskApiLogsGridFilterPool" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">Sigma\DuskWebApisLog\Model\ResourceModel\DuskApiLogs\Collection</argument>
+            <argument name="filterPool" xsi:type="object" shared="false">DuskApiLogsGridFilterPool</argument>
+        </arguments>
+    </virtualType>
+</config>

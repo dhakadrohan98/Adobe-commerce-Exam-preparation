@@ -1,0 +1,26 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module-commerce-events-client/etc/io_events.xsd">
+   <event name="observer.sales_order_save_after">
+      <fields>
+         <field name="id"/>
+         <field name="payment.account_status"/>
+         <field name="payment.amount_ordered"/>
+         <field name="payment.base_amount_ordered"/>
+         <field name="payment.method"/>
+         <field name="payment.shipping_method"/>
+         <field name="billing_address.address_type"/>
+         <field name="items.base_price"/>
+         <field name="items.created_at"/>
+         <field name="items.description"/>
+         <field name="items.name"/>
+         <field name="items.order_id"/>
+         <field name="items.parent_id" />
+         <field name="items.price" />
+         <field name="items.product_id" />
+         <field name="items.product_type" />
+         <field name="items.qty_backordered" />
+         <field name="items.qty_ordered" />
+         <field name="items.quote_item_id" />
+         <field name="items.sku" />
+      </fields>
+   </event>
+</config>

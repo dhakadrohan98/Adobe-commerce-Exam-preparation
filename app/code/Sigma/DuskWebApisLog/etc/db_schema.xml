@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="sigma_dusk_api_logs" resource="default" engine="innodb" comment="Dusk APIs Logs">
+        <column xsi:type="int" name="id" padding="10" unsigned="true" nullable="false" identity="true" comment="ID"/>
+        <column xsi:type="int" name="status_code" padding="5" unsigned="true" nullable="false" comment="Status Code"/>
+        <column xsi:type="varchar" name="request_url" nullable="false" length="150" comment="Request URL"/>
+        <column xsi:type="text" name="request_body" nullable="true" comment="Request Body"/>
+        <column xsi:type="text" name="response_body" nullable="true" comment="Response Body"/>
+        <column xsi:type="timestamp" name="created_at" nullable="false" default="CURRENT_TIMESTAMP" comment="Created At"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+    </table>
+</schema>

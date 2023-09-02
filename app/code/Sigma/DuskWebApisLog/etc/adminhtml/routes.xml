@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * @category    Sigma
+ * @package     Sigma_DuskWebApisLog
+ * @copyright   Copyright (c) Sigma Infosolutions (https://www.sigmainfo.net/)
+ * @license     https://www.sigmainfo.net/LICENSE.txt
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route id="duskapilogs" frontName="duskapilogs">
+            <module name="Sigma_DuskWebApisLog"/>
+        </route>
+    </router>
+</config>
