@@ -1,0 +1,15 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+declare(strict_types=1);
+
+namespace Magento\AdobeCommerceEventsClient\Event\Validator;
+
+/**
+ * Exception thrown due to events validation errors
+ */
+class ValidatorException extends \Magento\Framework\Exception\LocalizedException
+{
+}

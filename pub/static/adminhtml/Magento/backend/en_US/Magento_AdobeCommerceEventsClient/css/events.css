@@ -1,0 +1,4 @@
+.admin__page-nav-title.title {
+    overflow:hidden;
+    text-overflow:ellipsis;
+}

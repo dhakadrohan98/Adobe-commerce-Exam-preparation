@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * @category    Sigma
+ * @package     Sigma_DuskWebApisLog
+ * @copyright   Copyright (c) Sigma Infosolutions (https://www.sigmainfo.net/)
+ * @license     https://www.sigmainfo.net/LICENSE.txt
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Sigma_DuskWebApisLog::reports"
+             title="DUSK API Logs"
+             translate="title"
+             module="Sigma_DuskWebApisLog"
+             sortOrder="5"
+             parent="Magento_Reports::report"
+             resource="Sigma_DuskWebApisLog::reports" />
+
+        <add id="Sigma_DuskWebApisLog::reports_logs_grid"
+             title="Show Logs"
+             translate="title"
+             module="Sigma_DuskWebApisLog"
+             sortOrder="10"
+             parent="Sigma_DuskWebApisLog::reports"
+             action="duskapilogs/index/index"
+             resource="Sigma_DuskWebApisLog::reports" />
+    </menu>
+</config>
+

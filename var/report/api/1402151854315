@@ -1,0 +1,1 @@
+"Fatal Error: 'Declaration of Maggu\\CustomApi\\Model\\CustomEndpoint::execute($payload) must be compatible with Maggu\\CustomApi\\Api\\CustomEndpointInterface::execute()' in '\/var\/www\/html\/MagentoLearning\/app\/code\/Maggu\/CustomApi\/Model\/CustomEndpoint.php' on line 38"
